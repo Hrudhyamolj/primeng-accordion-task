@@ -1,0 +1,35 @@
+<body>
+<p-accordion [multiple]="true">
+    <p-accordionTab header="Customer Details" >
+    <div class="p-fluid p-formgrid p-grid">
+
+      <label for="title">Title</label> <input type="text" pInputText class="p-field p-col-4 p-xl-4" name="title"/>
+      <label for="firstName">First Name</label> <input type="text" pInputText class="p-field p-col-4 p-md-4" name="firstName"/>
+      <label for="lastName">Last Name</label> <input type="text" pInputText class="p-field p-col-4 p-md-4" name="lastName"/>
+
+    </div>
+
+    
+
+    <label for="dob">Date of Birth </label><input type="date" formControlName="dob"><br><br>
+
+    </p-accordionTab>
+
+
+    <p-accordionTab header="Users List">
+        <p>
+        <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">User Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Nationality</th>
+            <th scope="col">DOB</th>
+          </tr>
+        </thead>
+          
+      </table>
+    </p-accordionTab>
+    
+</p-accordion>
+</body>
